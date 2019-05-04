@@ -229,7 +229,7 @@ console.log(queryurl)
         lngSearch = businesses[0].coordinates.longitude // coordinates for first location listed
 
         var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 11,
+            zoom: 10,
             center: {
                 lat: latSearch,
                 lng: lngSearch
