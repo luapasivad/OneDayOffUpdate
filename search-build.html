@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- custom css -->
+  <!-- <link rel="stylesheet" href="assets/CSS/reset.css" type="text/css"> -->
+  <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+</head>
+
+
+<body>
+
+
+  <div class="container-fluid">
+
+    <nav class="navbar navbar-expand navbar-transparent  bg-transparent" id="nav">
+        <a id="thisHead" href="index.html" style="font-weight: bolder;">OneDayOff</a>
+      </button>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" id="navBtn">    
+        </li>
+      </ul>
+    </nav>
+
+
+
+  <div class="modal fade" id="logInModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="input-group mb-3 mt-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">@</span>
+            </div>
+            <input type="text" id="emailTxt" class="form-control" placeholder="Username" aria-label="Username"
+              aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3 mt-3">
+            <div class="input-group-prepend">
+            </div>
+            <input type="text" id="passTxt" class="form-control" placeholder="Password" aria-label="Password"
+              aria-describedby="basic-addon1">
+          </div>
+  
+          <button type="button" id="btnLogin" class="btn btn-primary">Login</button>
+          <button type="button" id="btnSignUp" class="btn btn-primary">Sign Up</button>
+          <button type="button" id="btnRecover" class="btn btn-primary">Change Password</button>
+          <div class="error pt-1" style="color: red; font-size: 12px;"></div>
+  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="titleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Finalize your Dayplan!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+            </div>
+            <input id="dayPlanTitle" type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+          </div>
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">Description</span>
+            </div>
+            <textarea id="dayPlanDesc" class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="completeBtn" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="row" data-what="searchRow" class="filter">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-8">
+
+      <div class="form-group">
+        <label for=""></label>
+        <input type="text" class="form-control" id="searchTxt" placeholder="searchterm">
+      </div>
+
+      <button type="button" id="searchBtn" class="btn btn-primary">Search</button>
+
+    </div>
+
+    <div class="col-sm-2"></div>
+
+  </div>
+
+  <div class="row mt-2" data-what="filterRow" class="filter">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-8">
+
+      <div class="dropdown d-inline">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Catagories
+        </button>
+        <div class="dropdown-menu" id="dropdown-catagories" aria-labelledby="dropdownMenuButton"></div>
+      </div>
+
+      <div class="btn-group btn-group-toggle" id="price" data-toggle="buttons">
+        <label class="btn btn-secondary btn-sm" data-howMuch="1">
+          <input type="radio" name="options" id="price1" autocomplete="off" checked>$
+        </label>
+        <label class="btn btn-secondary btn-sm" data-howMuch="2">
+          <input type="radio" name="options" id="price2" autocomplete="off">$$
+        </label>
+        <label class="btn btn-secondary btn-sm" data-howMuch="3">
+          <input type="radio" name="options" id="price3" autocomplete="off">$$$
+        </label>
+        <label class="btn btn-secondary btn-sm" data-howMuch="4">
+          <input type="radio" name="options" id="price4" autocomplete="off">$$$$
+        </label>
+      </div>
+
+
+      <div class="dropdown d-inline" id="dropdown-SortBy">
+        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" id="dropdownMenuButton"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sort by..
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item active" data-sortBy="best_match">Best Match</a>
+          <a class="dropdown-item" data-sortBy="review_count">Review Count</a>
+          <a class="dropdown-item" data-sortBy="rating">Highest Rated</a>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+    <div class="col-sm-2"></div>
+  </div>
+
+  <div class="row  mt-4" data-what="resultsRow">
+    <!-- <div class="col-sm-1"></div> -->
+    <div class="col-sm-6" id="results"></div>
+    <div class="col-sm-6 pr-4 pt-2 pl-0 mr-0 sidebar" id="sidebar">
+      <div id="map"></div>
+      <div id="currentDayDiv"></div>
+
+
+    </div>
+
+  </div>
+
+  </div>
+
+
+  <!-- bootstrap scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <!-- logic -->
+  <script src="assets/javascript/logic.js"></script>
+  <script src="assets/javascript/responsive-search-build.js"></script>
+
+  <script type="text/javascript"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFTkf1V2_w0As5gnBNmLnMEBWDNwVnulg&callback=initMap"></script>
+
+
+
+</body>
+
+</html>

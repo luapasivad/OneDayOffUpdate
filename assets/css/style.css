@@ -1,0 +1,430 @@
+*::after,
+*::before {
+    box-sizing: content-box!important;
+}
+
+
+body{
+    background-color: #F9DC5C!important;
+    color: #145374;
+}
+
+#profile{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    width: 875px;
+    border-style: solid;
+    border-width: 5px;
+    background-color: #e8e8e8;
+    /* opacity: 0.8; */
+    border-color: #00334e;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #145374;
+    /* padding: 30px; */
+    text-align: center;
+  
+}
+
+#navtitle{
+    font-size: 25px;
+    color: #00334e; 
+}
+
+#thisHead{
+    font-size: 23px;
+    color: #00334e;
+    
+    text-align: center;
+}
+
+#discovertitle{
+    font-size: 25px;
+    color: #00334e;
+    text-align: center;
+    
+
+}
+#title{
+    font-size: 25px;
+    color: #00334e;
+    text-align: center;
+}
+
+#profileTitle{
+    font-size: 25px;
+    color: #00334e;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#hometitle{
+    font-size: 25px;
+    color: #00334e;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+#created{
+    border-style: solid;
+    border-color: #00334e;
+    border-width: 5px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    min-height: 90%;
+    margin: 10px;
+    background-color: #e8e8e8;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #145374;
+}
+
+#favorites{
+    border-style: solid;
+    border-color: #00334e;
+    border-width: 5px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    min-height: 90%;
+    margin: 10px;
+    background-color: #e8e8e8;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #145374;
+    
+    
+}
+
+.days-off-card{
+    margin-top: 10px;
+}
+
+.nav-link{
+    color: #00334E;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#searchBtn{
+    background-color: #00334e;
+    color: white;
+    border-color: #00334e;
+    margin-left: 5px;
+}
+
+#locationTxt {
+    margin-top: 0;
+}
+
+#selected{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00334e;
+    margin-left: 20px;
+    margin-right: 20px;
+    min-height: 300px;
+    margin-top: 10px;
+    color: #145374;
+}
+
+#map{
+   border: 5px solid #00334E
+}
+
+#saved{
+    /* position:fixed; */
+    min-height: 100px;
+    text-align: center;
+    /* float:left;
+    width: 250px; */
+    border-color:#00334e;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    /* margin-right: 35px; */
+    /* float: right; */
+    background-color: #e8e8e8;
+    font-size: 30px;
+    border-radius: 25px;
+    color: #145374;
+}
+
+#searchResults{
+    min-height: 450px;
+    text-align: center;
+    /* float:left; */
+    border-color: #00334e;
+    border-style: solid;
+    border-width: 5px;
+    text-align: center;
+    margin-left: 35px;
+    /* float: left; */
+    /* width: 500px; */
+    background-color: #e8e8e8;
+    font-size: 30px;
+    border-radius: 25px;
+    color: #145374;
+
+}
+
+<<<<<<< HEAD:assets/css/style.css
+=======
+/* #personOne, #personTwo, #personThree, #personFour {
+           
+}
+#headingOne, #headingTwo, #headingThree, #headingFour {
+    background-color: #00334e;
+    color: white;
+    
+}
+button[data-toggle="collapse"] {
+    color: white;
+} */
+
+>>>>>>> master:Final/assets/css/style.css
+#loginModal {
+    position: relative;
+    float: right;
+    background-color: #00334e;
+    color: white;
+    border-color: #00334e;
+    margin-right: 10px;
+    
+}
+
+#homenav{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#modalContain {
+    margin-top: 12px;
+}
+
+#carouselFull {
+  /* margin-bottom: 40px; */
+  margin-top: 20px;
+  
+}
+
+.carousel-item{
+    width: 300px;
+    max-height: 450px;
+
+    
+}
+.carousel-inner{
+    border-width: 10px;
+    border-radius: 25px;
+
+}
+.bd-example{
+    border-radius: 25px;
+
+}
+
+
+.dropdown {
+    display: inline-block;
+    align-content: center;
+}
+
+#pre-made{
+    border-style: solid;
+    border-color: #00334e;
+    border-width: 5px;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    min-height: 90%;
+    /* margin-left: 25px;
+    margin-right: 25px; */
+    background-color: #e8e8e8;
+    font-size: 18px;
+    border-radius: 25px;
+    color: #145374;
+    /* position: relative;
+    left: 3.5% */
+}
+
+.pre-made-card{
+    margin-top: 10px;
+   
+
+}
+
+button[data-toggle="dropdown"] {
+    position: relative;
+    /* left:330% */
+}
+
+/* #formcard{
+   
+} */
+
+.accordion{
+    margin-top: 80px;
+}
+
+.resultsContainer {
+    float: left;
+    width: 100%;
+
+}
+
+#map {
+  height: 200px;
+  width: 100%;
+  }
+  
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+
+
+#openModal {
+    text-align: center;
+
+}
+
+#modalBottom {
+    background-color: skyblue;
+}
+
+#openModalText {
+    text-align: center;
+}
+
+#modalInner {
+    background-color: skyblue;
+}
+
+#modalImage {
+    position: relative;
+    left: 35%;
+
+}
+
+#stupidBox {
+    background-color: transparent;
+    height: 0;
+}
+
+#aboutUs {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+#menuNav {
+    font-size: 18px;
+
+}
+
+#loginMModal {
+    font-size: 18px;
+    float: right;
+    margin-bottom: 10px;
+}
+
+.nav-wrapper .input-field input[type=search] {
+
+    padding-left: 4rem;
+    width: calc(100% - 4rem);
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-top: 150;
+}
+
+<<<<<<< HEAD:assets/css/style.css
+#searchPre, #searchYou {
+    /* margin-right: 75px;
+    margin-left: 280px; */
+    width: 25%;
+    margin: auto;
+
+}
+
+#homePage {
+    text-align: center;
+    color: #00334e;
+}
+
+#btnLoginModal, #btnLogOut, #btnProfile{
+    color: #00334e;
+}
+
+.btn-primary {
+    background-color: #00334e !important;
+    border-color: #00334e!important;
+}
+
+#menuNav {
+    padding-top: 10px;
+}
+
+.card {
+    border: solid 5px #00334e;
+}
+
+.filter{
+    display: none;
+}
+
+/* #aboutUs{
+    font-size: 12px;
+    margin-top: 10px;
+    float: left;
+} */
+
+
+=======
+#searchPre {
+    margin-right: 75px;
+    margin-left: 280px;
+}
+#homePage {
+    text-align: center
+}
+
+>>>>>>> master:Final/assets/css/style.css
+@media only screen and (max-width: 760px) { 
+    #sidebar {
+        width: 90%;
+    }
+     .sidebar-responsive {
+        right: 0;
+        position: absolute;
+        background-color: white;
+        border-left: 3px darkblue solid;
+        border-top: 3px darkblue solid;
+        border-bottom: 3px darkblue solid;
+        height: 100vh;
+        padding: 5px;
+        display: none;
+    }
+
+    #map {
+        width: 90%;
+        margin: auto;
+        padding: auto;
+    }
+
+    .resultsContainer {
+        margin-right: 5%;
+        margin-top: 5%;
+
+    }
+}

@@ -1,0 +1,220 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>One Day Off</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+
+</head>
+
+<body>
+    <nav id="stupidBox">
+        <!-- navbar content here  -->
+    </nav>
+
+    <div class="container-fluid">
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+
+            
+            </div>
+        </li>
+        <li>
+            <p id="aboutUs"><i class="material icons">About Us</i></p>
+        </li>
+        <li><a href="#terms" class=" modal-trigger"><i class="material-icons">Ryan</i></a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#terms1" class=" modal-trigger"><i class="material-icons">Monica</i></a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#terms2" class=" modal-trigger"><i class="material-icons">Paul</i></a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <li><a href="#terms3" class=" modal-trigger"><i class="material-icons">Michael</i></a></li>
+    </ul>
+    <div class="container">
+        <a href="#" data-target="slide-out" class="sidenav-trigger" id="menuNav" style="float: left; color: #145374;">About Us</a>
+
+
+
+        <!-- <a href="#terms" class=" modal-trigger">Quick View</a> -->
+        <div class="modal" id="terms">
+            <div class="modal-content" id="modalInner">
+                <!-- <h4 id="openModal">"Itinerary name"</h4> -->
+                <p id="openModalText">Pre-Made</p>
+                <form>
+                    <ul class="objects">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cupiditate similique sunt ea
+                        quaerat
+                        hic laboriosam et iusto. Velit est beatae doloremque exercitationem delectus, quasi itaque eum
+                        modi?
+                        Veniam, accusantium.
+                    </ul>
+                </form>
+               
+            </div>
+            <div class="modal-footer" id="modalBottom">
+                <span class="modal-action modal-close" id="backButton" style="float:right; font-size:15px;"
+                    onclick="$('#backButton').closeModal();">
+                    <a href="#backButton" class="waves-effect waves-light btn">Back</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="modal" id="terms1">
+            <div class="modal-content" id="modalInner">
+                <!-- <h4 id="openModal">"Itinerary name"</h4> -->
+                <p id="openModalText">Pre-Made</p>
+                <form>
+                    <ul class="objects">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro veniam harum, deserunt quis earum
+                        aspernatur accusantium ipsam officiis quas recusandae minima ratione eos voluptatem reiciendis
+                        aperiam ea numquam impedit quaerat.
+                    </ul>
+                </form>
+
+            </div>
+            <div class="modal-footer" id="modalBottom">
+                <span class="modal-action modal-close" id="backButton" style="float:right; font-size:15px;"
+                    onclick="$('#backButton').closeModal();">
+                    <a href="#backButton" class="waves-effect waves-light btn">Back</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="modal" id="terms2">
+            <div class="modal-content" id="modalInner">
+                <!-- <h4 id="openModal">"Itinerary name"</h4> -->
+                <p id="openModalText">Pre-Made</p>
+                <form>
+                    <ul class="objects">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex corrupti dicta distinctio molestias
+                        blanditiis, velit dolorem officia ducimus et libero possimus perspiciatis accusantium amet illo
+                        similique porro quos iure mollitia.
+                    </ul>
+                </form>
+
+            </div>
+            <div class="modal-footer" id="modalBottom">
+                <span class="modal-action modal-close" id="backButton" style="float:right; font-size:15px;"
+                    onclick="$('#backButton').closeModal();">
+                    <a href="#backButton" class="waves-effect waves-light btn">Back</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="modal" id="terms3">
+            <div class="modal-content" id="modalInner">
+                <!-- <h4 id="openModal">"Itinerary name"</h4> -->
+                <p id="openModalText">Pre-Made</p>
+                <form>
+                    <ul class="objects">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum nam voluptatibus libero iure
+                        ipsam, illum facilis nihil! Possimus, qui hic, nulla sit tempore sed iusto explicabo quae, saepe
+                        pariatur totam?
+                    </ul>
+                </form>
+
+            </div>
+            <div class="modal-footer" id="modalBottom">
+                <span class="modal-action modal-close" id="backButton" style="float:right; font-size:15px;"
+                    onclick="$('#backButton').closeModal();">
+                    <a href="#backButton" class="waves-effect waves-light btn">Back</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="modal" id="terms4">
+            <div class="modal-content" id="modalInner">
+                <!-- <h4 id="openModal">"Itinerary name"</h4> -->
+                <p id="openModalText">Pre-Made</p>
+                <form>
+                    <ul class="objects">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum cupiditate similique sunt ea
+                        quaerat
+                        hic laboriosam et iusto. Velit est beatae doloremque exercitationem delectus, quasi itaque eum
+                        modi?
+                        Veniam, accusantium.
+                    </ul>
+                </form>
+
+            </div>
+            <div class="modal-footer" id="modalBottom">
+                <span class="modal-action modal-close" id="backButton" style="float:right; font-size:15px;"
+                    onclick="$('#backButton').closeModal();">
+                    <a href="#backButton" class="waves-effect waves-light btn">Back</a>
+                </span>
+            </div>
+
+        </div>
+
+
+        <div class="container">
+            <h3 id="homePage" style="font-weight: bolder">One day off?</h3>
+            <h5 id="homePage" style="font-style: italic">let's plan</h5>
+            <div class="carousel carousel-slider" id="demo-carousel-auto" data-indicators="true">
+                <a class="carousel-item" href="#one!"><img src="./assets/cities/sanDiego.png"></a>
+                <a class="carousel-item" href="#two!"><img src="./assets/cities/dc.png"></a>
+                <a class="carousel-item" href="#three!"><img src="./assets/cities/lasvegas.png"></a>
+                <a class="carousel-item" href="#four!"><img src="./assets/cities/LA.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/cities/chicago.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/cities/houston.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/cities/philly.png"></a>
+                <a class="carousel-item" href="#five!"><img src="./assets/cities/newyork.png"></a>
+            </div>
+        </div>
+        <div id="container" id="searchContainer">
+            <div class="nav-extended white pushpin z-depth-5">
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input placeholder="Where are we going?" type="text" id="locationTxt">
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <a class="waves-effect waves-indigo indigo darken-3 btn-large" id="searchYou">make yours</a>
+        <a class="waves-effect waves-teal btn-large btn indigo darken-3" id="searchPre">browse others</a>
+
+        <!-- JS code -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+
+        <!-- logic -->
+        <script src="./assets/javascript/home-materialize.js"></script>
+        <script src="./assets/javascript/logic.js"></script>
+
+
+        <script type="text/javascript"></script>
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFTkf1V2_w0As5gnBNmLnMEBWDNwVnulg&callback=initMap"></script>
+
+
+</body>
+
+</html>
