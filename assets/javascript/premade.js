@@ -18,7 +18,7 @@ $('#searchButton').on('click', function() {
     event.preventDefault()
     if ($('#search').val() != "") {
         $('#premadeDiv').empty()
-        sessionStorage['premadeCity'] = $('#search').val()
+        where = $('#search').val()
         searchPremade()
     }
 

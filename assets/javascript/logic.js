@@ -188,7 +188,7 @@ function nextPage() {
     page++
     offset = trueOffset * page
     searchTerm = searchTxt.val(); // text box
-    city = locationTxt.val();
+    city = sessionStorage["city"]
     search(city, searchTerm, howMuch, sorting, offset)
 }
 
@@ -197,7 +197,7 @@ function prevPage() {
     page--
     offset = trueOffset * page
     searchTerm = searchTerm; // text box
-    city = locationTxt.val();
+    city = sessionStorage["city"]
     search(city, searchTerm, howMuch, sorting, offset)
 }
 
