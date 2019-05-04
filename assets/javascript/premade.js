@@ -54,7 +54,7 @@ function searchPremade() {
                                 .appendTo('#premadeDiv')
                 let card = $('<div>').
                                 attr('class', 'card pre-made-card mb-3 mt-3')
-                                .attr('style', 'width: 200px')
+                                .attr('style', 'width: 200px; text-align: center;')
                                 .appendTo(column)
                 let img = $('<img>')
                                 .attr('src', image)
