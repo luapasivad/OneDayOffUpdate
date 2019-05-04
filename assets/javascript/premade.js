@@ -37,7 +37,7 @@ function searchPremade() {
             let city = obj.plan[2].location
             // console.log('doc id: ' + doc.id)
             
-            if (city.toLowerCase() === where.toLowerCase()) {
+            if (city && city.toLowerCase() === where.toLowerCase()) {
                 let key = doc.id
                 let newObj = {...obj.plan}
                 plansForThisCity.push(newObj)
