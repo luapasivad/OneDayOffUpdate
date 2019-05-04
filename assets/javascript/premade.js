@@ -18,7 +18,7 @@ $('#searchButton').on('click', function() {
     event.preventDefault()
     if ($('#search').val() != "") {
         $('#premadeDiv').empty()
-        where = $('#search').val()
+        sessionStorage['premadeCity'] = $('#search').val()
         searchPremade()
     }
 
@@ -35,7 +35,6 @@ function searchPremade() {
         snapshot.docs.forEach( doc => {
             let obj = doc.data()
             let city = obj.plan[2].location
-
             // console.log('doc id: ' + doc.id)
             
             if (city.toLowerCase() === where.toLowerCase()) {
