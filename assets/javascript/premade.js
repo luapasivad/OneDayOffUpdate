@@ -76,7 +76,7 @@ function searchPremade() {
                                 .attr('style', 'cursor:pointer;')
                                 .attr('data-key', key)
                                 .appendTo(card)
-    }
+            }
         })
     })
 

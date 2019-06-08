@@ -168,21 +168,6 @@ body{
 
 }
 
-<<<<<<< HEAD:assets/css/style.css
-=======
-/* #personOne, #personTwo, #personThree, #personFour {
-           
-}
-#headingOne, #headingTwo, #headingThree, #headingFour {
-    background-color: #00334e;
-    color: white;
-    
-}
-button[data-toggle="collapse"] {
-    color: white;
-} */
-
->>>>>>> master:Final/assets/css/style.css
 #loginModal {
     position: relative;
     float: right;
@@ -275,7 +260,7 @@ button[data-toggle="dropdown"] {
 }
 
 #map {
-  height: 200px;
+  height: 300px;
   width: 100%;
   }
   
